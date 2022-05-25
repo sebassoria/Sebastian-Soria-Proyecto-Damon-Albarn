@@ -16,27 +16,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.index-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas:
-        'header'
-        'main'
-        'footer';
-}
-
-.header {
-    grid-area: header;
-}
-
-.main {
-    grid-area: main;
-}
-
-.footer {
-    grid-area: footer;
-}
 
 /* header */
 header {
@@ -201,15 +180,14 @@ header {
 
 /* paginas secundarias */
 .paginas-secundarias--first {
-    /* margin-top: 13em; */
-    margin-top: 5em;
+    margin-top: 13em;
 }
 
 .titulo-secundario,
 .titulo-fotos {
     width: 90%;
     border-bottom: 0.04em solid #7ca68d;
-    margin-left: 5%;
+    margin: 0 5%;
     margin-top: 2.5em;
 }
 
@@ -223,58 +201,21 @@ header {
     text-align: start;
     font-size: 4em;
     border-bottom: 0.04em solid #7ca68d;
-    margin-left: 5%;
+    margin: 0 5%;
     margin-top: 2.5em;
 }
 
 /* biografias */
 
-.grid-bios{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-auto-rows: auto;
-    grid-template-areas:
-    "t-blur"
-    "bio-blur"
-    "t-gorillaz"
-    "bio-gorillaz"
-    "t-tgtbtq"
-    "bio-tgtbtq"
-    "t-albarn"
-    "bio-albarn";
-}
-.t-blur{
-    grid-area: t-blur;
-}
-.bio-blur{
-    grid-area: bio-blur;
-}
-.t-gorillaz{
-    grid-area: t-gorillaz;
-}
-.bio-gorillaz{
-    grid-area: bio-gorillaz;
-}
-.t-tgtbtq{
-    grid-area: t-tgtbtq;
-}
-.bio-tgtbtq{
-    grid-area: bio-tgtbtq;
-}
-.t-albarn{
-    grid-area: t-albarn;
-}
-.bio-albarn{
-    grid-area: bio-albarn;
-}
+
 .cont-bio2 {
     width: 100%;
 }
 
 .bio2 {
     background-color: #80808039;
-    border-radius: 1em;
-    padding: 1em;
+    border-radius: .8em;
+    padding: .8em;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -283,12 +224,14 @@ header {
 }
 
 .bio2__spoty {
+    margin: 1%;
     width: 28%;
     min-width: 250px;
     min-height: 300px;
 }
 
 .bio2__p {
+    margin: 1%;
     width: 68%;
     font-size: 1.5em;
     min-width: 250px; 
@@ -380,7 +323,7 @@ header {
 }
 
 .foto-item img {
-    border-radius: 1em;
+    border-radius: .6em;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -393,20 +336,7 @@ header {
 /* fin fotos y videos*/
 
 /* links */
-.grid-link{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: 
-    "link-container"
-    "foto-l";
-}
-.link-container{
-    grid-area: link-container;
-}
-.foto-l{
-    grid-area: foto-l;
-}
+
 
 .link-container {
     width: 100%;
