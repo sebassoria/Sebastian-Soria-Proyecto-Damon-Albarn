@@ -22,9 +22,9 @@
 <body class="container-fluid">
     <!-- header -->
     <header class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark navegador" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
             <div class="container">
-                <a class="navbar-brand" href="../index.html#contacto">Contacto</a>
+                <a class="navbar-brand m-3 contact" href="../index.html#contacto">Contacto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,8 +34,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="biografia.html">Biografias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Biografias
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-dark drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="biografia.html">Blur</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#gorillaz">Gorillaz</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#tgtbtq">The good, the bad & the queen</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#damon">Damon solista</a></li>
+                              </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fotos.html">Fotos</a>
@@ -52,13 +60,12 @@
         </nav>
     </header>
     <!-- fin header -->
-    <!-- main -->
-    <!-- <main class="row"> -->
-    <section class="row">
+
+    <section class="row" id="blur">
         <h1 class="titulo-secundario col-12">Blur</h1>
     </section>
-    <!-- <section class="cont-bio2"> -->
-    <div class="bio2 row">
+
+    <section class="bio2 row">
         <iframe class="bio2__spoty col-lg-4"
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4BIGoo?utm_source=generator" frameBorder="0"
             allowfullscreen=""
@@ -81,13 +88,13 @@
             Estados Unidos.<br>En abril de 2015 lanzaron su primer álbum de estudio después de doce años,
             The Magic Whip. Concebido durante cinco días en Hong Kong después de una gira por Japón
             cancelada en 2013, el álbum también se inspiró en la ciudad.</p>
-    </div>
-    <!-- </section> -->
-    <section class="row">
+    </section>
+
+    <section class="row" id="gorillaz">
         <h1 class="titulo-secundario col-12">Gorillaz</h1>
     </section>
-    <!-- <section class="cont-bio2"> -->
-    <div class="bio2 row">
+
+    <section class="bio2 row">
         <p class="bio2__p col-lg-8">Gorillaz es una banda virtual británica creada en 1998 por Damon Albarn y Jamie
             Hewlett. La banda está compuesta por cuatro miembros ficticios: 2-D, Noodle, Murdoc Niccals y
             Russel Hobbs. La mayoría de sus canciones junto con todo su universo ficticio, se presentan a
@@ -108,13 +115,13 @@
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO25rXbO?utm_source=generator" frameBorder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-    <!-- </section> -->
-    <section class="row">
+    </section>
+
+    <section class="row" id="tgtbtq">
         <h1 class="titulo-secundario col-12">The good, the bad & the Queen</h1>
     </section>
-    <!-- <section class="cont-bio2"> -->
-    <div class="bio2 row">
+
+    <section class="bio2 row">
         <iframe class="bio2__spoty col-lg-4"
             src="https://open.spotify.com/embed/artist/6iy8nrBbtL57i4eUttHTww?utm_source=generator" frameBorder="0"
             allowfullscreen=""
@@ -129,13 +136,13 @@
             (2018), incorpora música folklórica, synth pop y rock alternativo. El nombre del grupo está
             inspirado en la película de 1966 The Good, the Bad & the Ugly, del director Sergio Leone. El
             grupo posee algunos premios de categoría «Álbum del año».</p>
-    </div>
-    <!-- </section> -->
-    <section class="row">
+    </section>
+
+    <section class="row" id="damon">
         <h1 class="titulo-secundario col-12">Damon Albarn solista</h1>
     </section>
-    <!-- <section class="cont-bio2"> -->
-    <div class="bio2 row">
+
+    <section class="bio2 row">
         <p class="bio2__p col-lg-8">Albarn publicó su primer álbum solista titulado Everyday Robots (2014) y da
             comienzo a su gira con The Heavy seas. Se hizo tiempo también para algunos trabajos individuales
             como Mr. Tembo, basado en un elefante bebé huérfano que Damon conoció durante un viaje a
@@ -151,10 +158,8 @@
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0pHi6c?utm_source=generator" frameBorder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-    <!-- </section> -->
-    <!-- </main> -->
-    <!-- fin main -->
+    </section>
+
     <!-- footer -->
     <footer class="row">
         <nav class="pie col-12">

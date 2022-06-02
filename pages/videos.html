@@ -20,9 +20,9 @@
 <body class="container-fluid">
     <!-- header -->
     <header class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark navegador" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
             <div class="container">
-                <a class="navbar-brand" href="../index.html#contacto">Contacto</a>
+                <a class="navbar-brand m-3 contact" href="../index.html#contacto">Contacto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="biografia.html">Biografias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Biografias
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-dark drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="biografia.html">Blur</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#gorillaz">Gorillaz</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#tgtbtq">The good, the bad & the queen</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#damon">Damon solista</a></li>
+                              </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fotos.html">Fotos</a>
@@ -49,19 +57,8 @@
             </div>
         </nav>
     </header>
-    <!-- <header>
-        <nav class="nav1">
-            <ul class="navlist">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biografias</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
-        </nav>
-        <a href="../index.html#contacto" class="contacto">Contacto</a>
-    </header> -->
     <!-- fin header -->
+    
     <!-- main -->
     <div class="row">
         <h1 class="col titulo-videos">Videos</h1>
@@ -122,49 +119,9 @@
                 allowfullscreen></iframe>
         </div>
     </section>
-    <!-- <h1 class="titulo-fotos">Videos</h1>
-        <section class="seccion-videos">
-            <div class="videos-container">
-                <div class="video-item"><iframe width="560%" height="315"
-                        src="https://www.youtube.com/embed/mNsL85zOlyg" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560%" height="315"
-                        src="https://www.youtube.com/embed/LmfCaHaEa34" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/sjsQS85CBG0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/NJOQiKKsoUM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/2eS8KEQAlbU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/XAjOjEHRdRY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/qGD-OmfQUbQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/pRhfv_5wMYE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                <div class="video-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y-ziROaKtps"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-            </div>
-        </section> -->
-
+    
     <!-- fin main -->
+    
     <!-- footer -->
     <footer class="row">
         <nav class="pie col-12">

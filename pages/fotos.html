@@ -21,9 +21,9 @@
 
     <!-- header -->
     <header class="row">
-        <nav class=" navbar navbar-expand-lg navbar-dark navegador" style="background-color: #000000;">
+        <nav class=" navbar navbar-expand-lg navbar-dark navegador">
             <div class="container">
-                <a class="navbar-brand" href="../index.html#contacto">Contacto</a>
+                <a class="navbar-brand m-3 contact" href="../index.html#contacto">Contacto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="biografia.html">Biografias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Biografias
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="biografia.html">Blur</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#gorillaz">Gorillaz</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#tgtbtq">The good, the bad & the
+                                        queen</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#damon">Damon solista</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="fotos.html">Fotos</a>
@@ -49,148 +59,117 @@
                 </div>
             </div>
         </nav>
-    </header>    
-        <!-- fin header -->
-        <!-- main -->
-        <section class="row">
-            <h1 class="col titulo-fotos">Fotos</h1>
-        </section>
-        <section class="row justify-content-between align-items-center gy-3 m-5">
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a1.jpg" alt="foto banda Gorillaz">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a3.jpg" alt="foto Damon albarn">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a4.jpg" alt="foto Damon albarn">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a6.jpg" alt="foto banda blur">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a8.jpg" alt="foto banda Gorillaz">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a16.jpg" alt="foto banda blur">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a20.jpg" alt="foto Damon albarn">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a7.jpg" alt="foto Damon albarn">
-            </div>
-            <div class="foto-item col-sm-12 col-lg-6 col-xl-4">
-                <img src="../img/a10.jpg" alt="foto banda Gorillaz">
-            </div>
-        </section>
+    </header>
+    <!-- fin header -->
 
-        <!-- <main>
-            <h1 class="titulo-fotos">Fotos</h1>
-            <section class="seccion-fotos">
+    <!-- main -->
+    <main>
 
-                <div class="foto-container">
+        <h1 class="titulo-fotos">Fotos</h1>
+        <section class="seccion-fotos">
 
-                    <div class="foto-item item1">
-                        <img src="../img/a1.jpg" alt="foto banda Gorillaz">
-                    </div>
+            <div class="foto-container">
 
-                    <div class="foto-item item2">
-                        <img src="../img/a3.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item3">
-                        <img src="../img/a4.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item4">
-                        <img src="../img/a6.jpg" alt="foto banda blur">
-                    </div>
-
-                    <div class="foto-item item5">
-                        <img src="../img/a8.jpg" alt="foto banda Gorillaz">
-                    </div>
-
-                    <div class="foto-item item6">
-                        <img src="../img/a15.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item7">
-                        <img src="../img/a16.jpg" alt="foto banda blur">
-                    </div>
-
-                    <div class="foto-item item8">
-                        <img src="../img/a5.jpg" alt="foto banda gorillaz">
-                    </div>
-
-                    <div class="foto-item item9">
-                        <img src="../img/a17.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item10">
-                        <img src="../img/a9.jpg" alt="foto banda Gorillaz">
-                    </div>
-
-                    <div class="foto-item item11">
-                        <img src="../img/a14.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item12">
-                        <img src="../img/a12.jpg" alt="foto banda blur">
-                    </div>
-
-                    <div class="foto-item item13">
-                        <img src="../img/a20.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item14">
-                        <img src="../img/a7.jpg" alt="foto Damon albarn">
-                    </div>
-
-                    <div class="foto-item item15">
-                        <img src="../img/a10.jpg" alt="foto banda Gorillaz">
-                    </div>
-
+                <div class="foto-item item1">
+                    <img src="../img/a1.jpg" alt="foto banda Gorillaz">
                 </div>
-            </section>
-           
-        </main> -->
-        <!-- fin main -->
-        <!-- footer -->
-        <footer class="row">
-            <nav class="pie col-12">
-                <ul class="pie__ul">
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCFRNTiK9a2Lc_HPmTQK-C7A" target="_blank">
-                            <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOhJREFUSEvtleERATEQhb+rgA7ogA5QAR3QAR1QAhWgAypAB3RwJVAB80hm4obbOO6HmctMfuXt+7KbTZJQ8khK9qcCmBXOlqgLjIG6m23T4SHYO10KLICjjwsBMt9FGlqynoeGgA3QtyIj17fAQNoQoDQ7kQaW7ACoIk+AqxGltFdAw3J36/fNhxlYAK+dAROgZoAKA+SrLpsDwxzI14Cpy+QdozBA5ZG5ssgbHwN0yEugGXHIF7+B8JB1+1oRwTGSl236y4u2BkbZNi39qRBQEJF9nWNv9gk4u6n29Y9f9eHYDfX/f/INbvUiGfj4dkgAAAAASUVORK5CYII=" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/damonalbarn/" target="_blank">
-                            <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFlbsuRFEUhr9pNFPQaDRDLy4vwLwBSokErQTxBHgDxNQukSh5AzyBywugVqmU5Je15WTZ+5x9ZnIyuztnr/X/a/3rsls0fFoN4zM0gjlgF+gCkxVZvgH3wDHw5G1jGWwAZ31KtwmcF309gSJ/7BM8uM0XM/EEYl+vQfAJLJuU++Z3AUiF3+MJpGcnQSBHaTxmdVEg+lbEIrkxP2FMpQi+I+DPBiDHcbv/ACSnMh41UhH/w/UZxAgUzQSwBiwCsnkAroCvRM3+cKsIgp49YMtldwpsA7fAkrvLJtgDLi3iaQfyAswCB0AocG2JDoET4A6YcQShwAMRBIk0pTuO4AhQhgNJJEy14QiwCiwYiYp8DbQtu+SGqCqyHNWeK5E9oz2l3i+2Z2UNygZNUoRlphnQcMWO5kb30UmuuypiBKWrQqv5NRFZ7u/SZSeQRtd1iFKZqL9VyNTyC7bv9uCobbMenFwpsuyG9iZnRZdj9AO5y0cZdyMG3QAAAABJRU5ErkJggg==" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/DamonAlbarn/" target="_blank">
-                            <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMdJREFUSEvtle8NQUEQxH+vAkpQgg7QiRKoABWIilABOlACFZCROzb+xMvbvRcfbHLJfbmZm5nb24rCVRXGp3WCDTBwqhLGKGM8K7g4wV9wvQQH4JRQ+0An7e+4TQm2wBg4GsXWXhfBGeiZm2eOMALdfmhsWZp9N8KiFTBJQHNg9uZhuCxaAAJWhRJMgX0KNoerLLRUa6OkkQI1j4L8VLaHwgnUAzuvgny+WAZ/gpsDdX7T386gzsD5psD+Ve2PzKCB9oApPvSvbT04GeqYidwAAAAASUVORK5CYII=" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Damonalbarn" target="_blank">
-                            <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg==" />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-        <!-- fin footer -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
+
+                <div class="foto-item item2">
+                    <img src="../img/a3.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item3">
+                    <img src="../img/a4.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item4">
+                    <img src="../img/a6.jpg" alt="foto banda blur">
+                </div>
+
+                <div class="foto-item item5">
+                    <img src="../img/a8.jpg" alt="foto banda Gorillaz">
+                </div>
+
+                <div class="foto-item item6">
+                    <img src="../img/a15.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item7">
+                    <img src="../img/a16.jpg" alt="foto banda blur">
+                </div>
+
+                <div class="foto-item item8">
+                    <img src="../img/a5.jpg" alt="foto banda gorillaz">
+                </div>
+
+                <div class="foto-item item9">
+                    <img src="../img/a17.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item10">
+                    <img src="../img/a9.jpg" alt="foto banda Gorillaz">
+                </div>
+
+                <div class="foto-item item11">
+                    <img src="../img/a14.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item12">
+                    <img src="../img/a12.jpg" alt="foto banda blur">
+                </div>
+
+                <div class="foto-item item13">
+                    <img src="../img/a20.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item14">
+                    <img src="../img/a7.jpg" alt="foto Damon albarn">
+                </div>
+
+                <div class="foto-item item15">
+                    <img src="../img/a10.jpg" alt="foto banda Gorillaz">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- fin main -->
+    <!-- footer -->
+    <footer class="row">
+        <nav class="pie col-12">
+            <ul class="pie__ul">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCFRNTiK9a2Lc_HPmTQK-C7A" target="_blank">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOhJREFUSEvtleERATEQhb+rgA7ogA5QAR3QAR1QAhWgAypAB3RwJVAB80hm4obbOO6HmctMfuXt+7KbTZJQ8khK9qcCmBXOlqgLjIG6m23T4SHYO10KLICjjwsBMt9FGlqynoeGgA3QtyIj17fAQNoQoDQ7kQaW7ACoIk+AqxGltFdAw3J36/fNhxlYAK+dAROgZoAKA+SrLpsDwxzI14Cpy+QdozBA5ZG5ssgbHwN0yEugGXHIF7+B8JB1+1oRwTGSl236y4u2BkbZNi39qRBQEJF9nWNv9gk4u6n29Y9f9eHYDfX/f/INbvUiGfj4dkgAAAAASUVORK5CYII=" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/damonalbarn/" target="_blank">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFlbsuRFEUhr9pNFPQaDRDLy4vwLwBSokErQTxBHgDxNQukSh5AzyBywugVqmU5Je15WTZ+5x9ZnIyuztnr/X/a/3rsls0fFoN4zM0gjlgF+gCkxVZvgH3wDHw5G1jGWwAZ31KtwmcF309gSJ/7BM8uM0XM/EEYl+vQfAJLJuU++Z3AUiF3+MJpGcnQSBHaTxmdVEg+lbEIrkxP2FMpQi+I+DPBiDHcbv/ACSnMh41UhH/w/UZxAgUzQSwBiwCsnkAroCvRM3+cKsIgp49YMtldwpsA7fAkrvLJtgDLi3iaQfyAswCB0AocG2JDoET4A6YcQShwAMRBIk0pTuO4AhQhgNJJEy14QiwCiwYiYp8DbQtu+SGqCqyHNWeK5E9oz2l3i+2Z2UNygZNUoRlphnQcMWO5kb30UmuuypiBKWrQqv5NRFZ7u/SZSeQRtd1iFKZqL9VyNTyC7bv9uCobbMenFwpsuyG9iZnRZdj9AO5y0cZdyMG3QAAAABJRU5ErkJggg==" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/DamonAlbarn/" target="_blank">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMdJREFUSEvtle8NQUEQxH+vAkpQgg7QiRKoABWIilABOlACFZCROzb+xMvbvRcfbHLJfbmZm5nb24rCVRXGp3WCDTBwqhLGKGM8K7g4wV9wvQQH4JRQ+0An7e+4TQm2wBg4GsXWXhfBGeiZm2eOMALdfmhsWZp9N8KiFTBJQHNg9uZhuCxaAAJWhRJMgX0KNoerLLRUa6OkkQI1j4L8VLaHwgnUAzuvgny+WAZ/gpsDdX7T386gzsD5psD+Ve2PzKCB9oApPvSvbT04GeqYidwAAAAASUVORK5CYII=" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Damonalbarn" target="_blank">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg==" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

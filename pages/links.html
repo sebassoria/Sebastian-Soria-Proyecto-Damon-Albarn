@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Links</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +21,9 @@
 <body class="container-fluid">
     <!-- header -->
     <header class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark navegador" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg navbar-dark navegador">
             <div class="container">
-                <a class="navbar-brand" href="../index.html#contacto">Contacto</a>
+                <a class="navbar-brand m-3 contact" href="../index.html#contacto">Contacto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,8 +33,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="biografia.html">Biografias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Biografias
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-dark drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="biografia.html">Blur</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#gorillaz">Gorillaz</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#tgtbtq">The good, the bad & the queen</a></li>
+                                <li><a class="dropdown-item" href="biografia.html#damon">Damon solista</a></li>
+                              </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="fotos.html">Fotos</a>
@@ -49,22 +58,11 @@
             </div>
         </nav>
     </header>
-    <!-- <header>
-        <nav class="nav1">
-            <ul class="navlist">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="biografia.html">Biografias</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
-        </nav>
-        <a href="../index.html#contacto" class="contacto">Contacto</a>
-    </header> -->
+
     <!-- fin header -->
-    <!-- main -->
+
     <div class="row link-contain justify-content-around">
-        <div class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+        <nav class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
             <h2 class="link-item__tittle">Páginas oficiales</h2>
             <ul>
                 <li><a href="https://www.damonalbarnmusic.com/" target="_blank">Damon Albarn</a></li>
@@ -73,8 +71,8 @@
                 <li><a href="https://www.thegoodthebadandthequeen.com/" target="_blank">The good, the bad & the
                         Queen</a></li>
             </ul>
-        </div>
-        <div class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+        </nav>
+        <nav class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
             <h2 class="link-item__tittle">Youtube</h2>
             <ul>
                 <li><a href="https://www.youtube.com/user/damonalbarnmusic" target="_blank">Damon Albarn</a></li>
@@ -83,8 +81,8 @@
                 <li><a href="https://www.youtube.com/channel/UCs7K3QOtZPT2L-Z9i0DHyuQ" target="_blank">The good, the
                         bad & the Queen</a></li>
             </ul>
-        </div>
-        <div class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+        </nav>
+        <nav class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
             <h2 class="link-item__tittle">Instagram</h2>
             <ul>
                 <li><a href="https://www.instagram.com/damonalbarn/" target="_blank">Damon Albarn</a></li>
@@ -93,8 +91,8 @@
                 <li><a href="https://www.instagram.com/goodbadqueen/" target="_blank">The good, the bad & the
                         Queen</a></li>
             </ul>
-        </div>
-        <div class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+        </nav>
+        <nav class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
             <h2 class="link-item__tittle">Twitter</h2>
             <ul>
                 <li><a href="https://twitter.com/Damonalbarn" target="_blank">Damon Albarn</a></li>
@@ -103,24 +101,24 @@
                 <li><a href="https://twitter.com/goodbadqueen" target="_blank">The Good, The Bad & The Queen</a>
                 </li>
             </ul>
-        </div>
-        <div class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+        </nav>
+        <nav class="link-item col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
             <h2 class="link-item__tittle">Facebook</h2>
             <ul>
                 <li><a href="https://www.facebook.com/DamonAlbarn" target="_blank">Damon Albarn</a></li>
                 <li><a href="https://www.facebook.com/blur" target="_blank">Blur</a></li>
                 <li><a href="https://www.facebook.com/Gorillaz" target="_blank">Gorillaz</a></li>
-                <li><a href="https://www.facebook.com/thegoodthebadandthequeen" target="_blank">The Good, The Bad & The Queen</a></li>
+                <li><a href="https://www.facebook.com/thegoodthebadandthequeen" target="_blank">The Good, The Bad & The
+                        Queen</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="row">
-       <div class="col-12">
-        <img class="w-100 m-0"src="../img/fotolinks.jpg" alt="dibujo banda gorillaz">
-       </div>
+        <div class="col-12">
+            <img class="img-fluid" src="../img/fotolinks.jpg" alt="dibujo banda gorillaz">
+        </div>
     </div>
 
-    <!-- fin main -->
     <!-- footer -->
     <footer class="row">
         <nav class="pie col-12">
