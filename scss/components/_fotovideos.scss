@@ -1,0 +1,128 @@
+/* fotos y videos*/
+.titulo-fotos {
+   @extend %titulos; 
+   @include titu(1.5em, start);
+}
+
+.seccion-fotos,
+.seccion-videos {
+    width: 100%;
+
+    .foto-container,
+    .videos-container {
+        width: 90%;
+        margin: 5%;
+    }
+
+}
+
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "img1 img3 img3"
+        "img2 img3 img3"
+        "img4 img5 img6"
+        "img7 img7 img8"
+        "img7 img7 img9"
+        "img10 img11 img12"
+        "img13 img15 img15"
+        "img14 img15 img15";
+    gap: 1.6em;
+
+    .item1 {
+        grid-area: img1;
+    }
+
+    .item2 {
+        grid-area: img2;
+    }
+
+    .item3 {
+        grid-area: img3;
+    }
+
+    .item4 {
+        grid-area: img4;
+    }
+
+    .item5 {
+        grid-area: img5;
+    }
+
+    .item6 {
+        grid-area: img6;
+    }
+
+    .item7 {
+        grid-area: img7;
+    }
+
+    .item8 {
+        grid-area: img8;
+    }
+
+    .item9 {
+        grid-area: img9;
+    }
+
+    .item10 {
+        grid-area: img10;
+    }
+
+    .item11 {
+        grid-area: img11;
+    }
+
+    .item12 {
+        grid-area: img12;
+    }
+
+    .item13 {
+        grid-area: img13;
+    }
+
+    .item14 {
+        grid-area: img14;
+    }
+
+    .item15 {
+        grid-area: img15;
+    }
+
+    .foto-item img {
+        border-radius: .6em;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: all .5s;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.15);
+            z-index: 1;
+            box-shadow: 0 0 20px map-get($map: $colores, $key: segundo);
+        }
+    }
+}
+
+.titulo-videos {
+    @extend %titulos;
+    @include titu(1.5em, start);
+    padding: 0; 
+}
+.cont-videos{
+    width: 90%;
+    margin: 5%;
+    padding: 0;
+    .videos iframe {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* fin fotos y videos*/

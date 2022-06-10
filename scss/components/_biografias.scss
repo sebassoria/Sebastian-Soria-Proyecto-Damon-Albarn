@@ -1,0 +1,27 @@
+
+/* biografias */
+.titulo-secundario {
+    @extend %titulos;
+    @include titu(1.8em, center);
+}
+
+.bio2 {
+    background-color: #80808039;
+    border-radius: .6em;
+    padding: .8em;
+    width: 90%;
+    margin: 5%;
+
+    .bio2__spoty {
+        padding: 1em;
+        border-radius: 1.5em;
+        min-height: 350px;
+    }
+
+    .bio2__p {
+        padding: .5em;
+        font-size: 1.5em;
+    }
+}
+
+/* fin biografias */

@@ -1,0 +1,4 @@
+@mixin titu($top, $align) {
+    margin-top: $top;
+    text-align: $align;
+}

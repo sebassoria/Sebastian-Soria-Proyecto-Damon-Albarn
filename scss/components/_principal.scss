@@ -1,0 +1,55 @@
+/* titulo principal */
+
+.cont__titulos {
+    margin: 15em auto;
+    font-family: $letra-principal;
+    text-align: center;
+
+    .titulo-principal {
+        font-size: 10em;
+    }
+
+    .cont__p {
+        font-size: 2em;
+        text-shadow: 5px 5px 10px map-get($map: $colores, $key: segundo);
+    }
+}
+
+/* fin titulo principal */
+
+/* biografia principal*/
+.cont__bio {
+    width: 100%;
+    margin: auto;
+
+    .cont__foto img {
+        width: 100%;
+    }
+
+    .bio {
+        h3 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 0.3em;
+        }
+
+        p {
+            font-size: 1.5em;
+
+            em {
+                text-shadow: 5px 5px 5px map-get($map: $colores, $key: segundo);
+                font-style: inherit;
+            }
+        }
+    }
+}
+
+/* fin biografia principal*/
+
+/* video principal */
+.cont__video {
+    width: 80%;
+    margin: 9em auto 9em auto;
+}
+
+/* fin video principal*/
