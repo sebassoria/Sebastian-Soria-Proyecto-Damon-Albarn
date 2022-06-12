@@ -2,3 +2,9 @@
     margin-top: $top;
     text-align: $align;
 }
+
+@mixin btn($radius, $size, $weight) {
+    border-radius: $radius;
+    font-size: $size;
+    font-weight: $weight;
+}

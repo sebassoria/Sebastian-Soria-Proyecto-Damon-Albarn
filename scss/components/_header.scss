@@ -1,5 +1,8 @@
 
 /* header */
+
+@import '../base/mixins';
+
 header {
     padding: 2.1em 0;
 
@@ -11,8 +14,7 @@ header {
         background-color: map-get($map: $colores, $key: primero);
 
         .contact {
-            font-size: .8em;
-            border-radius: .8em;
+            @include btn(.8rem, .9rem, 500);
             padding: 0.5em;
             border: 0.28em solid map-get($map: $colores, $key: tercero);
             transition: .3s;

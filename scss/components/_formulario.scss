@@ -1,4 +1,5 @@
 /* formulario */
+@import '../base/mixins';
 
 .form {
     background-color: map-get($map: $colores, $key: primero);
@@ -24,10 +25,9 @@
             width: 70%;
             padding: 0.9em;
             margin: 0.4em;
-            border-radius: 0.5em;
             resize: none;
-            font-weight: 600;
-
+            @include btn(.8rem, .8rem, 600);
+        
             &.input:focus {
                 background: rgb(255, 255, 255);
                 background: linear-gradient(71deg, rgba(255, 255, 255, 1) 0%, rgba(124, 166, 141, 1) 100%);
@@ -35,6 +35,7 @@
         }
 
         .input--submit {
+            font-family: $letra-principal;
             background-color: map-get($map: $colores, $key: tercero);
             transition: background-color .3s;
 
@@ -52,9 +53,7 @@
         .volver {
             background-color: map-get($map: $colores, $key: tercero);
             color: map-get($map: $colores, $key: primero);
-            font-size: 0.8em;
-            font-weight: 500;
-            border-radius: 1.5em;
+            @include btn(.8rem, .8rem, 600);
             width: 5.5em;
             text-decoration: none;
             padding: 0.8em;

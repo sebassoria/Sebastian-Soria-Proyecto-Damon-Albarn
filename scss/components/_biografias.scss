@@ -1,5 +1,6 @@
 
 /* biografias */
+
 .titulo-secundario {
     @extend %titulos;
     @include titu(1.8em, center);
