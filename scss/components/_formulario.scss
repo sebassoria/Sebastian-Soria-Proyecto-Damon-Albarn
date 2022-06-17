@@ -2,13 +2,15 @@
 @import '../base/mixins';
 
 .form {
-    background-color: map-get($map: $colores, $key: primero);
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
     padding: 1em 0;
 
     .form__cont {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.9em;
-        padding: 1em 0;
+        padding: .9em 0 .8em 0;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -23,10 +25,10 @@
         .input,
         .input--submit {
             width: 70%;
-            padding: 0.9em;
+            padding: 0.8em;
             margin: 0.4em;
             resize: none;
-            @include btn(.8rem, .8rem, 600);
+            @include btn(.8rem, .9rem, 600);
         
             &.input:focus {
                 background: rgb(255, 255, 255);
@@ -35,12 +37,16 @@
         }
 
         .input--submit {
+            margin-top: 1.2em;
             font-family: $letra-principal;
-            background-color: map-get($map: $colores, $key: tercero);
-            transition: background-color .3s;
+            background-color: map-get($map: $colores, $key: segundo);
+            border: 1px solid map-get($map: $colores, $key: primero);
+            transition: all .3s;
 
             &:hover {
-                background-color: map-get($map: $colores, $key: segundo);
+                background-color: map-get($map: $colores, $key: primero);
+                color: map-get($map: $colores, $key: cuarto);
+                border: 1px solid map-get($map: $colores, $key: cuarto);
             }
         }
     }
@@ -51,17 +57,19 @@
         text-align: center;
 
         .volver {
-            background-color: map-get($map: $colores, $key: tercero);
+            background-color: map-get($map: $colores, $key: cuarto);
             color: map-get($map: $colores, $key: primero);
             @include btn(.8rem, .8rem, 600);
             width: 5.5em;
             text-decoration: none;
-            padding: 0.8em;
+            padding: .8em;
             transition: all .3s;
 
             &:hover {
-                background-color: map-get($map: $colores, $key: segundo);
-                color: map-get($map: $colores, $key: primero);
+                background-color: map-get($map: $colores, $key: primero);
+                color: map-get($map: $colores, $key: cuarto);
+                border: 1px solid map-get($map: $colores, $key: cuarto);
+            
             }
         }
     }

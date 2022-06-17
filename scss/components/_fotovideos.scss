@@ -1,7 +1,7 @@
 /* fotos y videos*/
 .titulo-fotos {
    @extend %titulos; 
-   @include titu(1.5em, start);
+   @include titu(1.3em, start);
 }
 
 .seccion-fotos,

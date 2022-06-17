@@ -24,7 +24,7 @@ header {
     background-color: #000000; }
     header .navegador .contact {
       border-radius: 0.8rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: 500;
       padding: 0.5em;
       border: 0.28em solid #808080;
@@ -41,7 +41,7 @@ header {
 /* fin header */
 /* titulo principal */
 .cont__titulos {
-  margin: 15em auto;
+  margin: 10em auto 25em auto;
   font-family: "Roboto", sans-serif;
   text-align: center; }
   .cont__titulos .titulo-principal {
@@ -55,12 +55,13 @@ header {
 .cont__bio {
   width: 100%;
   margin: auto; }
+  .cont__bio .ddays h3 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #7ca68d; }
   .cont__bio .cont__foto img {
     width: 100%; }
-  .cont__bio .bio h3 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 0.3em; }
   .cont__bio .bio p {
     font-size: 1.5em; }
     .cont__bio .bio p em {
@@ -76,12 +77,14 @@ header {
 /* fin video principal*/
 /* formulario */
 .form {
-  background-color: #000000;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1em 0; }
   .form .form__cont {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
-    padding: 1em 0;
+    padding: .9em 0 .8em 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -93,39 +96,44 @@ header {
     .form .form__cont .input,
     .form .form__cont .input--submit {
       width: 70%;
-      padding: 0.9em;
+      padding: 0.8em;
       margin: 0.4em;
       resize: none;
       border-radius: 0.8rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       font-weight: 600; }
       .form .form__cont .input.input:focus,
       .form .form__cont .input--submit.input:focus {
         background: white;
         background: linear-gradient(71deg, white 0%, #7ca68d 100%); }
     .form .form__cont .input--submit {
+      margin-top: 1.2em;
       font-family: "Roboto", sans-serif;
-      background-color: #808080;
-      transition: background-color .3s; }
+      background-color: #7ca68d;
+      border: 1px solid #000000;
+      transition: all .3s; }
       .form .form__cont .input--submit:hover {
-        background-color: #7ca68d; }
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #ffffff; }
   .form .form__volver {
     padding: 3em;
     margin: auto;
     text-align: center; }
     .form .form__volver .volver {
-      background-color: #808080;
+      background-color: #ffffff;
       color: #000000;
       border-radius: 0.8rem;
       font-size: 0.8rem;
       font-weight: 600;
       width: 5.5em;
       text-decoration: none;
-      padding: 0.8em;
+      padding: .8em;
       transition: all .3s; }
       .form .form__volver .volver:hover {
-        background-color: #7ca68d;
-        color: #000000; }
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #ffffff; }
 
 /* fin formulario */
 /* footer */
@@ -134,7 +142,7 @@ footer {
   background: radial-gradient(circle, gray 0%, rgba(124, 166, 141, 0.456) 100%);
   margin: 0; }
   footer .pie {
-    padding: 2.8em;
+    padding-top: 2.8em;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -142,7 +150,8 @@ footer {
       width: 12em;
       display: flex;
       justify-content: space-around;
-      list-style: none; }
+      list-style: none;
+      padding: 0; }
       footer .pie .pie__ul li a img {
         width: 2em;
         margin-bottom: 0;
@@ -150,17 +159,31 @@ footer {
         footer .pie .pie__ul li a img:hover {
           transform: scale(1.4); }
 
+.copyr {
+  color: #000000;
+  font-size: .8em;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto 2em auto; }
+
+.disclaimer {
+  display: none; }
+
 /* fin footer */
 .titulo-secundario, .titulo-fotos, .titulo-videos {
   width: 90%;
   border-bottom: 0.04em solid #7ca68d;
   margin: 0 5%;
-  font-size: 3.5em; }
+  font-size: 3.2em; }
 
 /* biografias */
 .titulo-secundario {
   margin-top: 1.8em;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 .bio2 {
   background-color: #80808039;
@@ -174,12 +197,12 @@ footer {
     min-height: 350px; }
   .bio2 .bio2__p {
     padding: .5em;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
 
 /* fin biografias */
 /* fotos y videos*/
 .titulo-fotos {
-  margin-top: 1.5em;
+  margin-top: 1.3em;
   text-align: start; }
 
 .seccion-fotos,
@@ -314,7 +337,9 @@ footer {
       font-size: 1.7em; }
   .cont__bio {
     width: 100%; }
-    .cont__bio .bio h3 {
+    .cont__bio .ddays h3 {
+      display: none; }
+    .cont__bio .bio p {
       margin: 1.6em auto .8em auto; }
   .cont__video {
     width: 100%;
@@ -344,13 +369,13 @@ footer {
   .cont__titulos {
     margin: 8.5em auto; }
     .cont__titulos .titulo-principal {
-      font-size: 5.5em; }
+      font-size: 5em; }
     .cont__titulos .cont__p {
-      font-size: 1.5em; }
+      font-size: 1.3em; }
   .cont__bio {
     width: 100%; }
     .cont__bio .bio h3 {
-      font-size: 2.5em;
+      font-size: 2em;
       margin: 1.6em auto .8em auto; }
     .cont__bio .bio p {
       font-size: 1.2em; }
@@ -364,6 +389,9 @@ footer {
     .form .form__cont .input,
     .form .form__cont .input--submit {
       width: 90%; }
+    .form .form__volver .volver {
+      background-color: #7ca68d;
+      color: #000000; }
   .titulo-secundario {
     width: 95%;
     margin: auto;
@@ -379,7 +407,7 @@ footer {
       border-radius: 1em; }
     .bio2 .bio2__p {
       padding: .5em;
-      font-size: 1.1em; }
+      font-size: 1em; }
   .titulo-fotos {
     font-size: 2.5em; }
   .titulo-videos {
@@ -389,5 +417,11 @@ footer {
   .foto-container {
     grid-template-columns: 1fr;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12" "img13" "img14" "img15"; }
-  .link-item {
-    margin-bottom: 2.5em; } }
+  .form {
+    background-image: none;
+    background-color: #000000; }
+  .link-item .link-item__tittle {
+    padding: 0;
+    font-size: 1.4em; }
+  .link-item--last {
+    margin-bottom: 3em; } }

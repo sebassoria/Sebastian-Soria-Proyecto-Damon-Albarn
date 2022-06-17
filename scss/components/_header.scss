@@ -14,7 +14,7 @@ header {
         background-color: map-get($map: $colores, $key: primero);
 
         .contact {
-            @include btn(.8rem, .9rem, 500);
+            @include btn(.8rem, .8rem, 500);
             padding: 0.5em;
             border: 0.28em solid map-get($map: $colores, $key: tercero);
             transition: .3s;

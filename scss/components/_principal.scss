@@ -1,7 +1,7 @@
 /* titulo principal */
 
 .cont__titulos {
-    margin: 15em auto;
+    margin: 10em auto 25em auto;
     font-family: $letra-principal;
     text-align: center;
 
@@ -21,17 +21,22 @@
 .cont__bio {
     width: 100%;
     margin: auto;
+    
 
+    .ddays{
+        h3 {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 0.5em;
+            color: map-get($map: $colores, $key: segundo);
+        }
+    }
     .cont__foto img {
         width: 100%;
     }
-
+    
     .bio {
-        h3 {
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 0.3em;
-        }
+        
 
         p {
             font-size: 1.5em;

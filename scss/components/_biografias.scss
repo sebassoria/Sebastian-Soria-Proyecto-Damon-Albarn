@@ -4,6 +4,7 @@
 .titulo-secundario {
     @extend %titulos;
     @include titu(1.8em, center);
+    padding: 0;
 }
 
 .bio2 {
@@ -21,7 +22,7 @@
 
     .bio2__p {
         padding: .5em;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
