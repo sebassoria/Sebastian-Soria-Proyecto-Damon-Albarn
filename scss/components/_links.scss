@@ -11,6 +11,8 @@
     .link-item {
         width: auto;
         padding: .8em;
+        border-radius: .8em;
+        background-color: #00000093;
         
         .link-item__tittle {
             color: map-get($map: $colores, $key: segundo);

@@ -8,14 +8,12 @@
     padding: 1em 0;
 
     .form__cont {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $letra-form;
         font-size: 0.9em;
         padding: .9em 0 .8em 0;
         margin: auto;
-        display: flex;
+        @include flexbox(flex, space-between, center);
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
 
         label {
             margin-top: 0.8em;
@@ -24,9 +22,8 @@
 
         .input,
         .input--submit {
-            width: 70%;
+            @include centrado(70%, .4em);
             padding: 0.8em;
-            margin: 0.4em;
             resize: none;
             @include btn(.8rem, .9rem, 600);
         

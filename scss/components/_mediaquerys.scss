@@ -1,11 +1,11 @@
 /* media */
 
 @media screen and (max-width: 1200px) {
-    .cont__bio {
-        .cont__foto img {
+    .cont-bio {
+        .cont-bio__foto img {
             margin-top: 1em;
         }
-        .bio {
+        .cont-bio__bio {
             h3 {
                 font-size: 1.9em;
                 margin: 0 auto .1em auto;
@@ -37,19 +37,19 @@
         }
     }
 
-    .cont__bio {
+    .cont-bio {
         width: 100%;
 
-        .ddays{
+        .cont-bio__tit{
             h3 {
                 display: none;
             }
         }   
         
-        .bio {
+        .cont-bio__bio {
              
             p {
-                margin: 1.6em auto .8em auto;
+                margin: 2em auto .8em auto;
             }
         }
     }
@@ -116,19 +116,9 @@
         }
     }
 
-    .cont__bio {
-        width: 100%;
-
-        .bio {
-            h3 {
-                font-size: 2em;
-                margin: 1.6em auto .8em auto;
-            }
-
-            p {
-                font-size: 1.2em;
-            }
-        }
+    .cont-bio {
+        margin-top: 6em;
+       
     }
 
     .cont__video {
@@ -190,8 +180,9 @@
         font-size: 2.5em;
     }
 
-    .videos-container {
+    .cont-videos {
         width: 100%;
+        margin: 2.5em 0;
     }
 
     .foto-container {
@@ -225,6 +216,6 @@
         }
     }
     .link-item--last {
-        margin-bottom: 3em;
+        margin-bottom: 20em;
     }
 }

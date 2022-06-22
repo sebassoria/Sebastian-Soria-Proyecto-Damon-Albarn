@@ -4,15 +4,13 @@
 .titulo-secundario {
     @extend %titulos;
     @include titu(1.8em, center);
-    padding: 0;
 }
 
 .bio2 {
     background-color: #80808039;
     border-radius: .6em;
     padding: .8em;
-    width: 90%;
-    margin: 5%;
+    @include centrado(90%, 5%);
 
     .bio2__spoty {
         padding: 1em;

@@ -6,14 +6,11 @@ footer {
 
     .pie {
         padding-top: 2.8em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+        @include flexbox(flex, center, center);
+        
         .pie__ul {
             width: 12em;
-            display: flex;
-            justify-content: space-around;
+            @include flexbox(flex, space-around, center);
             list-style: none;
             padding: 0;
 
@@ -31,13 +28,10 @@ footer {
 }
 .copyr{
     color: map-get($map: $colores, $key: primero);
-    font-size: .8em;
-    font-weight: 500;
-    display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 0;
-        margin: 0 auto 2em auto;
+    @include btn(0, .8em, 500);
+    @include flexbox(flex, center, flex-start);
+    padding: 0;
+    margin: 0 auto 2em auto;
 }
 .disclaimer{
     display: none;

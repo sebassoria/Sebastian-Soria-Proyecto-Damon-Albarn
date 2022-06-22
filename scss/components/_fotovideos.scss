@@ -10,8 +10,7 @@
 
     .foto-container,
     .videos-container {
-        width: 90%;
-        margin: 5%;
+        @include centrado(90%, 5%);
     }
 
 }
@@ -111,16 +110,12 @@
 .titulo-videos {
     @extend %titulos;
     @include titu(1.5em, start);
-    padding: 0; 
 }
 .cont-videos{
-    width: 90%;
-    margin: 5%;
-    padding: 0;
+    @include centrado(90%, 5%);
+    
     .videos iframe {
         width: 100%;
-        margin: 0;
-        padding: 0;
     }
 }
 

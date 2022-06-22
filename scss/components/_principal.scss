@@ -18,12 +18,10 @@
 /* fin titulo principal */
 
 /* biografia principal*/
-.cont__bio {
-    width: 100%;
-    margin: auto;
+.cont-bio {
+    @include centrado(90%, auto);
     
-
-    .ddays{
+    .cont-bio__tit{
         h3 {
             font-size: 3em;
             text-align: center;
@@ -31,13 +29,12 @@
             color: map-get($map: $colores, $key: segundo);
         }
     }
-    .cont__foto img {
+    .cont-bio__foto img {
         width: 100%;
     }
     
-    .bio {
+    .cont-bio__bio {
         
-
         p {
             font-size: 1.5em;
 

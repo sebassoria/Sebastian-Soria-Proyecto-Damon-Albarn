@@ -52,19 +52,19 @@ header {
 
 /* fin titulo principal */
 /* biografia principal*/
-.cont__bio {
-  width: 100%;
+.cont-bio {
+  width: 90%;
   margin: auto; }
-  .cont__bio .ddays h3 {
+  .cont-bio .cont-bio__tit h3 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 0.5em;
     color: #7ca68d; }
-  .cont__bio .cont__foto img {
+  .cont-bio .cont-bio__foto img {
     width: 100%; }
-  .cont__bio .bio p {
+  .cont-bio .cont-bio__bio p {
     font-size: 1.5em; }
-    .cont__bio .bio p em {
+    .cont-bio .cont-bio__bio p em {
       text-shadow: 5px 5px 5px #7ca68d;
       font-style: inherit; }
 
@@ -87,17 +87,17 @@ header {
     padding: .9em 0 .8em 0;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     .form .form__cont label {
       margin-top: 0.8em;
       width: 70%; }
     .form .form__cont .input,
     .form .form__cont .input--submit {
       width: 70%;
-      padding: 0.8em;
       margin: 0.4em;
+      padding: 0.8em;
       resize: none;
       border-radius: 0.8rem;
       font-size: 0.9rem;
@@ -144,12 +144,13 @@ footer {
   footer .pie {
     padding-top: 2.8em;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     footer .pie .pie__ul {
       width: 12em;
       display: flex;
       justify-content: space-around;
+      align-items: center;
       list-style: none;
       padding: 0; }
       footer .pie .pie__ul li a img {
@@ -161,11 +162,12 @@ footer {
 
 .copyr {
   color: #000000;
-  font-size: .8em;
+  border-radius: 0;
+  font-size: 0.8em;
   font-weight: 500;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   padding: 0;
   margin: 0 auto 2em auto; }
 
@@ -182,8 +184,7 @@ footer {
 /* biografias */
 .titulo-secundario {
   margin-top: 1.8em;
-  text-align: center;
-  padding: 0; }
+  text-align: center; }
 
 .bio2 {
   background-color: #80808039;
@@ -266,17 +267,13 @@ footer {
 
 .titulo-videos {
   margin-top: 1.5em;
-  text-align: start;
-  padding: 0; }
+  text-align: start; }
 
 .cont-videos {
   width: 90%;
-  margin: 5%;
-  padding: 0; }
+  margin: 5%; }
   .cont-videos .videos iframe {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
+    width: 100%; }
 
 /* fin fotos y videos*/
 /* links */
@@ -290,7 +287,9 @@ footer {
   right: 0; }
   .link-contain .link-item {
     width: auto;
-    padding: .8em; }
+    padding: .8em;
+    border-radius: .8em;
+    background-color: #00000093; }
     .link-contain .link-item .link-item__tittle {
       color: #7ca68d;
       padding: 0.1em;
@@ -318,12 +317,12 @@ footer {
 /* fin links */
 /* media */
 @media screen and (max-width: 1200px) {
-  .cont__bio .cont__foto img {
+  .cont-bio .cont-bio__foto img {
     margin-top: 1em; }
-  .cont__bio .bio h3 {
+  .cont-bio .cont-bio__bio h3 {
     font-size: 1.9em;
     margin: 0 auto .1em auto; }
-  .cont__bio .bio p {
+  .cont-bio .cont-bio__bio p {
     font-size: 1.1em; }
   .bio2 .bio2__p {
     font-size: 1.3em; } }
@@ -335,12 +334,12 @@ footer {
       font-size: 8em; }
     .cont__titulos .cont__p {
       font-size: 1.7em; }
-  .cont__bio {
+  .cont-bio {
     width: 100%; }
-    .cont__bio .ddays h3 {
+    .cont-bio .cont-bio__tit h3 {
       display: none; }
-    .cont__bio .bio p {
-      margin: 1.6em auto .8em auto; }
+    .cont-bio .cont-bio__bio p {
+      margin: 2em auto .8em auto; }
   .cont__video {
     width: 100%;
     margin: 3em 0; }
@@ -372,13 +371,8 @@ footer {
       font-size: 5em; }
     .cont__titulos .cont__p {
       font-size: 1.3em; }
-  .cont__bio {
-    width: 100%; }
-    .cont__bio .bio h3 {
-      font-size: 2em;
-      margin: 1.6em auto .8em auto; }
-    .cont__bio .bio p {
-      font-size: 1.2em; }
+  .cont-bio {
+    margin-top: 6em; }
   .cont__video {
     width: 100%;
     margin: 3em 0; }
@@ -412,8 +406,9 @@ footer {
     font-size: 2.5em; }
   .titulo-videos {
     font-size: 2.5em; }
-  .videos-container {
-    width: 100%; }
+  .cont-videos {
+    width: 100%;
+    margin: 2.5em 0; }
   .foto-container {
     grid-template-columns: 1fr;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12" "img13" "img14" "img15"; }
@@ -424,4 +419,4 @@ footer {
     padding: 0;
     font-size: 1.4em; }
   .link-item--last {
-    margin-bottom: 3em; } }
+    margin-bottom: 20em; } }

@@ -8,3 +8,14 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin centrado($width, $margin){
+    width: $width;
+    margin: $margin;
+}
+
+@mixin flexbox($display, $jc, $ai){
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+}
