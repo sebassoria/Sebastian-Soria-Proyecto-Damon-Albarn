@@ -208,14 +208,18 @@
         background-image: none;
         background-color: map-get($map: $colores, $key: primero);
     }
-    .link-item{
+    
+    .link-contain{
        
-        .link-item__tittle {      
-            padding: 0;
-            font-size: 1.4em;
+        .link-item{
+            width: 90%;
+            .link-item__tittle {      
+                padding: 0;
+                font-size: 1.4em;
+            }
         }
-    }
-    .link-item--last {
-        margin-bottom: 20em;
+        .link-item--last {
+            margin-bottom: 20em;
+        }
     }
 }

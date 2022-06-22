@@ -415,8 +415,10 @@ footer {
   .form {
     background-image: none;
     background-color: #000000; }
-  .link-item .link-item__tittle {
-    padding: 0;
-    font-size: 1.4em; }
-  .link-item--last {
+  .link-contain .link-item {
+    width: 90%; }
+    .link-contain .link-item .link-item__tittle {
+      padding: 0;
+      font-size: 1.4em; }
+  .link-contain .link-item--last {
     margin-bottom: 20em; } }
